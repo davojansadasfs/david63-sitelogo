@@ -1,0 +1,30 @@
+{
+	"name": "david63/sitelogo",
+	"type": "phpbb-extension",
+	"description": "Replace the standard phpBB logo with own logo",
+	"homepage": "",
+	"version": "1.0.0",
+	"time": "2014-11-30",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "David Wood",
+			"username": "david63",
+			"email": "david@webworld.xyz",
+			"homepage": "http://webworld.xyz",
+			"role": "Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Site logo",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.2,<3.2.*@dev"
+      	},
+		"version-check": {
+			"host": "webworld.xyz",
+			"directory": "/versioncheck",
+			"filename": "sitelogo_versions.json"
+		}
+	}
+}
