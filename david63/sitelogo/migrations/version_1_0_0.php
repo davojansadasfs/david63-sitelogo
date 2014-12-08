@@ -21,6 +21,16 @@ class version_1_0_0 extends \phpbb\db\migration\migration
 			array('config.add', array('site_logo_right', 0)),
 			array('config.add', array('site_logo_width', '')),
 			array('config.add', array('version_sitelogo', '1.0.0')),
+
+			// Add the ACP module
+			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'SITE_LOGO')),
+
+			array('module.add', array(
+				'acp', 'SITE_LOGO', array(
+					'module_basename'	=> '\david63\sitelogo\acp\sitelogo_module',
+					'modes'				=> array('manage'),
+				),
+			)),
 		);
 	}
 }

@@ -33,19 +33,32 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'SITE_LOGO_HEIGHT'			=> 'Logo height',
-	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original height.',
 	'SITE_LOGO'					=> 'Custom site logo',
+
+	'SITE_LOGO_EXPLAIN'			=> 'Here you can set the options for a custom site logo to replace the default logo.',
+
+	'SITE_LOGO_HEIGHT'			=> 'Logo height',
+	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original height.<br />The default logo height is 152px.',
+
 	'SITE_LOGO_IMAGE'			=> 'Path to the custom site logo.',
 	'SITE_LOGO_IMAGE_EXPLAIN'	=> 'Leaving this blank will use the default logo.<br />If you want to use a remote image as the logo then enter the full url of the image otherwise just enter the location of the image on the site.',
+
 	'SITE_LOGO_LEFT'			=> 'Left corners',
 	'SITE_LOGO_LEFT_EXPLAIN'	=> 'Round the left side corners to match the banner.',
+	'SITE_LOGO_LOG'				=> '<strong>Custom site logo options updated</strong>',
+
+	'SITE_LOGO_MANAGE'			=> 'Manage site logo',
+
+	'SITE_LOGO_OPTIONS'			=> 'Site logo options',
+
 	'SITE_LOGO_PIXELS'			=> 'Pixels',
 	'SITE_LOGO_PIXELS_EXPLAIN'	=> 'Sets the number of pixel for rounding.',
+
 	'SITE_LOGO_RIGHT'			=> 'Right corners',
 	'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Round the right side corners to match the banner.',
+
 	'SITE_LOGO_WIDTH'			=> 'Logo width',
-	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original width.',
+	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original width.<br />The default logo width is 149px.',
 ));
 
 ?>

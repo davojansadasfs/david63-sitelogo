@@ -1,7 +1,7 @@
 {
 	"name": "david63/sitelogo",
 	"type": "phpbb-extension",
-	"description": "Replace the standard phpBB logo with own logo",
+	"description": "Replace the standard phpBB logo with own custom logo",
 	"homepage": "",
 	"version": "1.0.0",
 	"time": "2014-11-30",
