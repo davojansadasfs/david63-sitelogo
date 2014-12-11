@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Replace the standard phpBB logo with own custom logo",
 	"homepage": "",
-	"version": "1.0.0",
-	"time": "2014-11-30",
+	"version": "1.0.0-b1",
+	"time": "2014-12-08",
 	"license": "GPL-2.0",
 	"authors": [{
 			"name": "David Wood",
