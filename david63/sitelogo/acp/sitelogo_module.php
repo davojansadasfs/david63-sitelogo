@@ -52,6 +52,7 @@ class sitelogo_module
 			$this->config->set('site_logo_pixels', $this->request->variable('site_logo_pixels', 0));
 			$this->config->set('site_logo_left', $this->request->variable('site_logo_left', 0));
 			$this->config->set('site_logo_right', $this->request->variable('site_logo_right', 0));
+			$this->config->set('site_logo_supress', $this->request->variable('site_logo_supress', 0));
 
 			$phpbb_log->add('admin', $this->user->data['user_id'], $this->user->ip, 'SITE_LOGO_LOG');
 			trigger_error($user->lang['CONFIG_UPDATED'] . adm_back_link($this->u_action));
@@ -64,6 +65,7 @@ class sitelogo_module
 			'SITE_LOGO_PIXELS'	=> isset($this->config['site_logo_pixels']) ? $this->config['site_logo_pixels'] : '',
 			'SITE_LOGO_LEFT'	=> isset($this->config['site_logo_left']) ? $this->config['site_logo_left'] : '',
 			'SITE_LOGO_RIGHT'	=> isset($this->config['site_logo_right']) ? $this->config['site_logo_right'] : '',
+			'SITE_LOGO_SUPRESS'	=> isset($this->config['site_logo_supress']) ? $this->config['site_logo_supress'] : '',
 
 			'U_ACTION'			=> $this->u_action,
 		));

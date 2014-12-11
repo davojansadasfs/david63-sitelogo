@@ -52,7 +52,7 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.page_header_after'			=> 'site_logo',
+			'core.page_header_after' => 'site_logo',
 		);
 	}
 
@@ -75,8 +75,16 @@ class listener implements EventSubscriberInterface
 			$logo_corners = ($this->config['site_logo_left'] && $this->config['site_logo_right']) ? $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px' : $logo_corners;
 
 			$this->template->assign_vars(array(
-				'SITE_LOGO_IMG'	=> '<img src=' . $logo_path . ' style="max-width: 100%; height:auto; height:' . $this->config['site_logo_height'] . 'px; width:' . $this->config['site_logo_width'] . 'px; -webkit-border-radius: ' . $logo_corners . '; -moz-border-radius: ' . $logo_corners . '; border-radius: ' . $logo_corners . ';">',
+				'SITE_LOGO_IMG'		=> '<img src=' . $logo_path . ' style="max-width: 100%; height:auto; height:' . $this->config['site_logo_height'] . 'px; width:' . $this->config['site_logo_width'] . 'px; -webkit-border-radius: ' . $logo_corners . '; -moz-border-radius: ' . $logo_corners . '; border-radius: ' . $logo_corners . ';">',
 			));
+
+			if ($this->config['site_logo_supress'])
+			{
+				$this->template->assign_vars(array(
+					'SITENAME'			=> '',
+					'SITE_DESCRIPTION'	=> '',
+				));
+			}
 		}
 	}
 }

@@ -19,6 +19,7 @@ class version_1_0_0 extends \phpbb\db\migration\migration
 			array('config.add', array('site_logo_left', 0)),
 			array('config.add', array('site_logo_pixels', 7)),
 			array('config.add', array('site_logo_right', 0)),
+			array('config.add', array('site_logo_supress', 0)),
 			array('config.add', array('site_logo_width', '')),
 			array('config.add', array('version_sitelogo', '1.0.0')),
 

@@ -57,6 +57,9 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_RIGHT'			=> 'Right corners',
 	'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Round the right side corners to match the banner.',
 
+	'SITE_LOGO_SUPRESS'			=> 'Supress text display',
+	'SITE_LOGO_SUPRESS_EXPLAIN'	=> 'Setting this option will prevent the <strong>Site Name</strong> and <strong>Site Description</strong> from being displayed.',
+
 	'SITE_LOGO_WIDTH'			=> 'Logo width',
 	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original width.<br />The default logo width is 149px.',
 ));
