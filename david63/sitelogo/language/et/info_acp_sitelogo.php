@@ -63,5 +63,3 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_WIDTH'			=> 'Logo laius',
 	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Jättes selle tühjaks kasutatakse logo vaikimisi laiust.<br />Vaikimisi logo laius on 149px.',
 ));
-
-?>

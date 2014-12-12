@@ -63,5 +63,3 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_WIDTH'			=> 'Anchura del logo',
 	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Dejando esto en blanco usará anchura original del logo.<br />La anchura por defecto del logo es 149px.',
 ));
-
-?>

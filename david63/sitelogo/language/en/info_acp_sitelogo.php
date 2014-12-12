@@ -63,5 +63,3 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_WIDTH'			=> 'Logo width',
 	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Leaving this blank will use the logo\'s original width.<br />The default logo width is 149px.',
 ));
-
-?>

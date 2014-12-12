@@ -36,30 +36,31 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'SITE_LOGO'					=> 'Egen logga',
 
-	'SITE_LOGO_EXPLAIN'			=> 'Här kan du ändra inställningarna för att visa din egna sidlogga som ska ersätta standardloggan.',
+	'SITE_LOGO_EXPLAIN'			=> 'HÃ¤r kan du Ã¤ndra instÃ¤llningarna fÃ¶r att visa din egna sidlogga som ska ersÃ¤tta standardloggan.',
 
-	'SITE_LOGO_HEIGHT'			=> 'Loggans höjd',
-	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Lämnas detta fält tomt så används standardloggans höjd (152px).',
+	'SITE_LOGO_HEIGHT'			=> 'Loggans hÃ¶jd',
+	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'LÃ¤mnas detta fÃ¤lt tomt sÃ¥ anvÃ¤nds standardloggans hÃ¶jd (152px).',
 
-	'SITE_LOGO_IMAGE'			=> 'Sökväg till den egna sidloggan.',
-	'SITE_LOGO_IMAGE_EXPLAIN'	=> 'Lämna detta fält tomt för att använda standardloggan.<br />Om du vill använda en logga från en annan domän anger du hela URLen, annars anger du den lokala sökvägen.',
+	'SITE_LOGO_IMAGE'			=> 'SÃ¶kvÃ¤g till den egna sidloggan.',
+	'SITE_LOGO_IMAGE_EXPLAIN'	=> 'LÃ¤mna detta fÃ¤lt tomt fÃ¶r att anvÃ¤nda standardloggan.<br />Om du vill anvÃ¤nda en logga frÃ¥n en annan domÃ¤n anger du hela URLen, annars anger du den lokala sÃ¶kvÃ¤gen.',
 
-	'SITE_LOGO_LEFT'			=> 'Vänstra hörn',
-	'SITE_LOGO_LEFT_EXPLAIN'	=> 'Runda av de vänstra hörnen för att matcha sidhuvudet.',
-	'SITE_LOGO_LOG'				=> '<strong>Inställningarna för den egna loggan har sparats</strong>',
+	'SITE_LOGO_LEFT'			=> 'VÃ¤nstra hÃ¶rn',
+	'SITE_LOGO_LEFT_EXPLAIN'	=> 'Runda av de vÃ¤nstra hÃ¶rnen fÃ¶r att matcha sidhuvudet.',
+	'SITE_LOGO_LOG'				=> '<strong>InstÃ¤llningarna fÃ¶r den egna loggan har sparats</strong>',
 
 	'SITE_LOGO_MANAGE'			=> 'Hantera egen logga',
 
-	'SITE_LOGO_OPTIONS'			=> 'Inställningar för egen logga',
+	'SITE_LOGO_OPTIONS'			=> 'InstÃ¤llningar fÃ¶r egen logga',
 
 	'SITE_LOGO_PIXELS'			=> 'pixlar',
-	'SITE_LOGO_PIXELS_EXPLAIN'	=> 'Ställer in pixlarna för hörnets rundning.',
+	'SITE_LOGO_PIXELS_EXPLAIN'	=> 'StÃ¤ller in pixlarna fÃ¶r hÃ¶rnets rundning.',
 
-	'SITE_LOGO_RIGHT'			=> 'Högra hörn',
-	'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Runda av de högra hörnen för att matcha sidhuvudet.',
+	'SITE_LOGO_RIGHT'			=> 'HÃ¶gra hÃ¶rn',
+	'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Runda av de hÃ¶gra hÃ¶rnen fÃ¶r att matcha sidhuvudet.',
+
+	'SITE_LOGO_SUPRESS'			=> 'DÃ¶lj texterna intill loggan',
+	'SITE_LOGO_SUPRESS_EXPLAIN'	=> 'Denna instÃ¤llning dÃ¶ljer texterna <strong>Site Name</strong> och <strong>Site Description</strong>.',
 
 	'SITE_LOGO_WIDTH'			=> 'Loggans bredd',
-	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Lämnas detta fält tomt så används standardloggans bredd (149px).',
+	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'LÃ¤mnas detta fÃ¤lt tomt sÃ¥ anvÃ¤nds standardloggans bredd (149px).',
 ));
-
-?>
