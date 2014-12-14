@@ -41,9 +41,32 @@
 		</dl>
 
 		<dl>
-			<dt><label for="site_logo_supress">{L_SITE_LOGO_SUPRESS}{L_COLON}</label><br /><span>{L_SITE_LOGO_SUPRESS_EXPLAIN}</span></dt>
-			<dd><label><input type="radio" class="radio" name="site_logo_supress" value="1" id="site_logo_supress"<!-- IF SITE_LOGO_SUPRESS --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
-				<label><input type="radio" class="radio" name="site_logo_supress" value="0" <!-- IF not SITE_LOGO_SUPRESS --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+			<dt><label for="site_logo_position">{L_SITE_LOGO_POSITION}{L_COLON}</label></dt>
+			<dd>
+				<!-- BEGIN positions -->
+					<label><input type="radio" class="radio" id="site_logo_position" name="site_logo_position" value="{positions.VALUE}"<!-- IF positions.S_CHECKED --> checked="checked"<!-- ENDIF --> /> {positions.LABEL}</label>
+				<!-- END positions -->
+			</dd>
+		</dl>
+
+		<hr>
+
+		<dl>
+			<dt><label for="site_logo_remove">{L_SITE_LOGO_REMOVE}{L_COLON}</label><br /><span>{L_SITE_LOGO_REMOVE_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_logo_remove" value="1" id="site_logo_remove"<!-- IF SITE_LOGO_REMOVE --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_logo_remove" value="0" <!-- IF not SITE_LOGO_REMOVE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_search_remove">{L_SITE_SEARCH_REMOVE}{L_COLON}</label><br /><span>{L_SITE_SEARCH_REMOVE_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_search_remove" value="1" id="site_search_remove"<!-- IF SITE_SEARCH_REMOVE --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_search_remove" value="0" <!-- IF not SITE_SEARCH_REMOVE --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl>
+
+		<dl>
+			<dt><label for="site_name_supress">{L_SITE_NAME_SUPRESS}{L_COLON}</label><br /><span>{L_SITE_NAME_SUPRESS_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="site_name_supress" value="1" id="site_name_supress"<!-- IF SITE_NAME_SUPRESS --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="site_name_supress" value="0" <!-- IF not SITE_NAME_SUPRESS --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
 		</dl>
 
 

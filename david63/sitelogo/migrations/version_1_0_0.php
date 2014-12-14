@@ -18,9 +18,12 @@ class version_1_0_0 extends \phpbb\db\migration\migration
 			array('config.add', array('site_logo_image', '')),
 			array('config.add', array('site_logo_left', 0)),
 			array('config.add', array('site_logo_pixels', 7)),
+			array('config.add', array('site_logo_position', 0)),
+			array('config.add', array('site_logo_remove', 0)),
 			array('config.add', array('site_logo_right', 0)),
-			array('config.add', array('site_logo_supress', 0)),
 			array('config.add', array('site_logo_width', '')),
+			array('config.add', array('site_name_supress', 0)),
+			array('config.add', array('site_search_remove', '')),
 			array('config.add', array('version_sitelogo', '1.0.0')),
 
 			// Add the ACP module

@@ -25,6 +25,9 @@ class listener implements EventSubscriberInterface
 	/** @var \phpbb\template\twig\twig */
 	protected $template;
 
+	/** @var \phpbb\user */
+	protected $user;
+
 	/** @var string phpBB root path */
 	protected $root_path;
 
@@ -35,10 +38,11 @@ class listener implements EventSubscriberInterface
 	* @param \phpbb\template\twig\twig $template phpBB template
 	* @access public
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\template\twig\twig $template, $root_path)
+	public function __construct(\phpbb\config\config $config, \phpbb\template\twig\twig $template, \phpbb\user $user, $root_path)
 	{
 		$this->config		= $config;
 		$this->template		= $template;
+		$this->user			= $user;
 		$this->root_path	= $root_path;
 	}
 
@@ -65,22 +69,27 @@ class listener implements EventSubscriberInterface
 	*/
 	public function site_logo_header($event)
 	{
-		if ($this->config['site_logo_image'])
+		$site_logo_img = ($this->config['site_logo_remove']) ? '' : $this->user->img('site_logo');
+
+		if ($this->config['site_logo_image'] && !$this->config['site_logo_remove'])
 		{
-			$logo_path = (strpos(strtolower($this->config['site_logo_image']), 'http') !== false) ? $this->config['site_logo_image'] : append_sid($this->root_path . $this->config['site_logo_image'], false, false);
+			$logo_path		= (strpos(strtolower($this->config['site_logo_image']), 'http') !== false) ? $this->config['site_logo_image'] : append_sid($this->root_path . $this->config['site_logo_image'], false, false);
 
-			$logo_corners 		= '0px 0px 0px 0px';
-			$logo_corners 		= ($this->config['site_logo_left']) ? $this->config['site_logo_pixels'] . 'px 0px 0px ' . $this->config['site_logo_pixels'] . 'px' : $logo_corners;
- 			$logo_corners 		= ($this->config['site_logo_right']) ? '0px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px 0px' : $logo_corners;
-			$logo_corners 		= ($this->config['site_logo_left'] && $this->config['site_logo_right']) ? $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px' : $logo_corners;
-			$site_description	= ($this->config['site_logo_supress']) ? '' : ($this->config['site_desc']);
-			$sitename_supress	= ($this->config['site_logo_supress']) ? true : false;
+			$logo_corners 	= '0px 0px 0px 0px';
+			$logo_corners 	= ($this->config['site_logo_left']) ? $this->config['site_logo_pixels'] . 'px 0px 0px ' . $this->config['site_logo_pixels'] . 'px' : $logo_corners;
+ 			$logo_corners 	= ($this->config['site_logo_right']) ? '0px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px 0px' : $logo_corners;
+			$logo_corners 	= ($this->config['site_logo_left'] && $this->config['site_logo_right']) ? $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px ' . $this->config['site_logo_pixels'] . 'px' : $logo_corners;
 
-			$this->template->assign_vars(array(
-				'SITE_LOGO_IMG'		=> '<img src=' . $logo_path . ' style="max-width: 100%; height:auto; height:' . $this->config['site_logo_height'] . 'px; width:' . $this->config['site_logo_width'] . 'px; -webkit-border-radius: ' . $logo_corners . '; -moz-border-radius: ' . $logo_corners . '; border-radius: ' . $logo_corners . ';">',
-				'SITE_DESCRIPTION'	=> $site_description,
-				'SITENAME_SUPRESS'	=> $sitename_supress,
-			));
+			$site_logo_img	= '<img src=' . $logo_path . ' style="max-width: 100%; height:auto; height:' . $this->config['site_logo_height'] . 'px; width:' . $this->config['site_logo_width'] . 'px; -webkit-border-radius: ' . $logo_corners . '; -moz-border-radius: ' . $logo_corners . '; border-radius: ' . $logo_corners . ';">';
 		}
+
+		$this->template->assign_vars(array(
+			'SITE_DESCRIPTION'	=> ($this->config['site_name_supress']) ? '' : ($this->config['site_desc']),
+			'SITE_LOGO_CENTRE'	=> ($this->config['site_logo_position'] == 1) ? true : false,
+			'SITE_LOGO_IMG'		=> $site_logo_img,
+			'SITE_LOGO_RIGHT'	=> ($this->config['site_logo_position'] == 2) ? true : false,
+			'SITENAME_SUPRESS'	=> ($this->config['site_name_supress']) ? true : false,
+			'S_DISPLAY_SEARCH'	=> ($this->config['site_search_remove']) ? false : true,
+		));
 	}
 }
