@@ -89,7 +89,7 @@ class listener implements EventSubscriberInterface
 			'SITE_LOGO_IMG'		=> $site_logo_img,
 			'SITE_LOGO_RIGHT'	=> ($this->config['site_logo_position'] == 2) ? true : false,
 			'SITENAME_SUPRESS'	=> ($this->config['site_name_supress']) ? true : false,
-			'S_DISPLAY_SEARCH'	=> ($this->config['site_search_remove']) ? false : true,
+			'S_IN_SEARCH'		=> ($this->config['site_search_remove']) ? true : false,
 		));
 	}
 }
