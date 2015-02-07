@@ -1,4 +1,9 @@
+#site-description {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
 #site-description .logo {
-	margin-right: 50%;
-	margin-left: 50%;
+	float: none;
 }

@@ -1,3 +1,8 @@
+#site-description {
+    text-align: right;
+    width: 100%;
+}
+
 #site-description .logo {
-	float :right;
+	float: none;
 }
