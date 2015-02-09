@@ -65,11 +65,11 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_RIGHT_EXPLAIN'		=> 'De rechterhoeken afronden zodat het bij de banner past.',
 
 	'SITE_LOGO_WIDTH'				=> 'Breedte logo',
-	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Als je dit leeg laat, wordt de orginele breedte van het logo gebruikt.<br />De standaard logo breedte is 149px.',
+	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Als je dit leeg laat, wordt de originele breedte van het logo gebruikt.<br />De standaard logo breedte is 149px.',
 
-	'SITE_NAME_SUPRESS'				=> 'sitenaam en beschrijving verbergen',
+	'SITE_NAME_SUPRESS'				=> 'Sitenaam en beschrijving verbergen',
 	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Als je deze optie instelt wordt de <strong>Sitenaam</strong> en <strong>Site beschrijving</strong> niet meer weergegeven',
 
-	'SITE_SEARCH_REMOVE'			=> 'Verwijder zoekbok',
-	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Als je deze optie instelt wordt de zoekbok uit de header niet meer weergegeven.',
+	'SITE_SEARCH_REMOVE'			=> 'Verwijder zoekvlak',
+	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Als je deze optie instelt wordt het zoekvlak in de header niet meer weergegeven.',
 ));
