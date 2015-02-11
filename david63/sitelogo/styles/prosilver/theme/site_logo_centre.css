@@ -1,9 +1,13 @@
 #site-description {
-    float: none;
+    padding-top: 10px;
     text-align: center;
     width: 100%;
 }
 
 #site-description .logo {
 	float: none;
+}
+
+.search-header {
+	margin-top: -40px;
 }
