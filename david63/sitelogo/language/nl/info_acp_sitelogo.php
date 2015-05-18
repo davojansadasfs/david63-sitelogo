@@ -12,12 +12,12 @@
 */
 if (!defined('IN_PHPBB'))
 {
-	exit;
+   exit;
 }
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+   $lang = array();
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -31,45 +31,49 @@ if (empty($lang) || !is_array($lang))
 // You do not need this where single placeholders are used, e.g. 'Message %d' is fine
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+//
+// Some characters you may want to copy&paste:
+// ’ » “ ” …
+//
 
 $lang = array_merge($lang, array(
-	'LOGO_CENTRE'					=> 'Centreren',
-	'LOGO_LEFT'						=> 'Links',
-	'LOGO_RIGHT'					=> 'Rechts',
+   'LOGO_CENTRE'				=> 'Midden',
+   'LOGO_LEFT'                  => 'Links',
+   'LOGO_RIGHT'					=> 'Rechts',
 
-	'SITE_LOGO'						=> 'Aangepaste site logo',
+   'SITE_LOGO'					=> 'Aangepaste site logo',
 
-	'SITE_LOGO_EXPLAIN'				=> 'Hier kan je de opties voor het aangepaste logo instellen, om het standaard logo te vervangen.',
+   'SITE_LOGO_EXPLAIN'			=> 'Hier kunt u de opties voor een aangepaste site logo instellen en de bestaande logo vervangen.',
 
-	'SITE_LOGO_HEIGHT'				=> 'Hoogte logo',
-	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Als je dit leeg laat, wordt de orginele hoogte van het logo gebruikt.<br />De standaard logo hoogte is 152px.',
+   'SITE_LOGO_HEIGHT'			=> 'Logo hoogte',
+   'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Laat dit leeg voor de originele logo hoogte.<br />De standaard logo hoogte is 52px.',
 
-	'SITE_LOGO_IMAGE'				=> 'Pad naar het aangepaste logo.',
-	'SITE_LOGO_IMAGE_EXPLAIN'		=> 'Als je dit leeg laat wordt het standaard logo gebruikt.<br />Als je een afbeelding van een andere server wilt gebruiken, voer dan de volledige link van de afbeelding in. Zoniet, dan kan je de locatie van het logo op jou website invullen.',
+   'SITE_LOGO_IMAGE'            => 'Url naar de standaard site logo.',
+   'SITE_LOGO_IMAGE_EXPLAIN'	=> 'Laat dit leeg om de originele logo te gebruiken.<br />Als u een externe afbeelding logo wilt gebruiken voert u de volledige url in anders gewoon de locatie van de afbeelding logo op de site.',
 
-	'SITE_LOGO_LEFT'				=> 'Linker hoeken',
-	'SITE_LOGO_LEFT_EXPLAIN'		=> 'De linkerhoeken afronden zodat het bij de banner past.',
-	'SITE_LOGO_LOG'					=> '<strong>Aangepaste site logo opties aangepast</strong>',
+   'SITE_LOGO_LEFT'				=> 'Linker hoeken',
+   'SITE_LOGO_LEFT_EXPLAIN'		=> 'Rond de linker hoeken af om de banner te laten passen.',
+   'SITE_LOGO_LOG'              => '<strong>Site logo opties bijgewerkt</strong>',
 
-	'SITE_LOGO_MANAGE'				=> 'Beheer site logo',
+   'SITE_LOGO_MANAGE'           => 'Beheer site logo',
 
-	'SITE_LOGO_OPTIONS'				=> 'Site logo opties',
+   'SITE_LOGO_OPTIONS'          => 'Site logo opties',
 
-	'SITE_LOGO_PIXELS'				=> 'Pixels',
-	'SITE_LOGO_PIXELS_EXPLAIN'		=> 'Stel hier het aantal pixels in voor de afronding.',
-	'SITE_LOGO_POSITION'			=> 'Site logo positie',
+   'SITE_LOGO_PIXELS'           => 'Pixels',
+   'SITE_LOGO_PIXELS_EXPLAIN'	=> 'Stel het aantal pixels in voor het afronden.',
+   'SITE_LOGO_POSITION'         => 'Site logo positie',
 
-	'SITE_LOGO_REMOVE'				=> 'Verwijder site logo',
-	'SITE_LOGO_REMOVE_EXPLAIN'		=> 'Als je deze optie instelt, wordt de site logo niet meer weergegeven.',
-	'SITE_LOGO_RIGHT'				=> 'Rechter hoeken',
-	'SITE_LOGO_RIGHT_EXPLAIN'		=> 'De rechterhoeken afronden zodat het bij de banner past.',
+   'SITE_LOGO_REMOVE'           => 'Verwijder site logo',
+   'SITE_LOGO_REMOVE_EXPLAIN'	=> 'Deze optie voorkomt weergave site logo.',
+   'SITE_LOGO_RIGHT'            => 'Rechter hoeken',
+   'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Rond de rechter hoeken af om de banner te laten passen.',
 
-	'SITE_LOGO_WIDTH'				=> 'Breedte logo',
-	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Als je dit leeg laat, wordt de originele breedte van het logo gebruikt.<br />De standaard logo breedte is 149px.',
+   'SITE_LOGO_WIDTH'            => 'Logo breedte',
+   'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Laat dit leeg voor de originele logo breedte.<br />De standaard logo breedte is 149px.',
 
-	'SITE_NAME_SUPRESS'				=> 'Sitenaam en beschrijving verbergen',
-	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Als je deze optie instelt wordt de <strong>Sitenaam</strong> en <strong>Site beschrijving</strong> niet meer weergegeven',
+   'SITE_NAME_SUPRESS'			=> 'Geen tekstweergave',
+   'SITE_NAME_SUPRESS_EXPLAIN'	=> 'Deze optie voorkomt dat de <strong>Site Naam</strong> en de <strong>Site beschrijving</strong> wordt getoont.',
 
-	'SITE_SEARCH_REMOVE'			=> 'Verwijder zoekvlak',
-	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Als je deze optie instelt wordt het zoekvlak in de header niet meer weergegeven.',
+   'SITE_SEARCH_REMOVE'         => 'Verwijder zoekbox',
+   'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Deze optie verwijderd de zoekbox uit de Banner.',
 ));

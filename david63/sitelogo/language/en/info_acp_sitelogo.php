@@ -31,6 +31,10 @@ if (empty($lang) || !is_array($lang))
 // You do not need this where single placeholders are used, e.g. 'Message %d' is fine
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
+//
+// Some characters you may want to copy&paste:
+// ’ » “ ” …
+//
 
 $lang = array_merge($lang, array(
 	'LOGO_CENTRE'					=> 'Centre',
@@ -42,7 +46,7 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_EXPLAIN'				=> 'Here you can set the options for a custom site logo to replace the default logo.',
 
 	'SITE_LOGO_HEIGHT'				=> 'Logo height',
-	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Leaving this blank will use the logo\'s original height.<br />The default logo height is 152px.',
+	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Leaving this blank will use the logo’s original height.<br />The default logo height is 52px.',
 
 	'SITE_LOGO_IMAGE'				=> 'Path to the custom site logo.',
 	'SITE_LOGO_IMAGE_EXPLAIN'		=> 'Leaving this blank will use the default logo.<br />If you want to use a remote image as the logo then enter the full url of the image otherwise just enter the location of the image on the site.',
@@ -65,7 +69,7 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_RIGHT_EXPLAIN'		=> 'Round the right side corners to match the banner.',
 
 	'SITE_LOGO_WIDTH'				=> 'Logo width',
-	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Leaving this blank will use the logo\'s original width.<br />The default logo width is 149px.',
+	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Leaving this blank will use the logo’s original width.<br />The default logo width is 149px.',
 
 	'SITE_NAME_SUPRESS'				=> 'Suppress text display',
 	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Setting this option will prevent the <strong>Site Name</strong> and <strong>Site Description</strong> from being displayed.',

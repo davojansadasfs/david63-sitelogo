@@ -42,7 +42,7 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_EXPLAIN'				=> 'Impostare le opzioni per un logo personalizzato che sostituisca quello di default.',
 
 	'SITE_LOGO_HEIGHT'				=> 'Altezza logo',
-	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Lasciare vuoto questo campo per utilizzare l\'altezza originale del logo.<br />L\'altezza predefinita è 152px.',
+	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Lasciare vuoto questo campo per utilizzare l\'altezza originale del logo.<br />L\'altezza predefinita è 52px.',
 
 	'SITE_LOGO_IMAGE'				=> 'Path del logo personalizzato',
 	'SITE_LOGO_IMAGE_EXPLAIN'		=> 'Lasciando vuoto questo campo, verrà utilizzato il logo predefinito.<br />Se si desidera utilizzare un\'immagine remota come logo, inserire l\'URL completo dell\'immagine, altrimenti inserire la posizione dell\'immagine sul sito.',

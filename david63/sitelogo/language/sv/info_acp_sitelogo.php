@@ -43,7 +43,7 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_EXPLAIN'				=> 'Här kan du ändra inställningarna för att visa din egna sidlogga som ska ersätta standardloggan.',
 
 	'SITE_LOGO_HEIGHT'				=> 'Loggans höjd',
-	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Lämnas detta fält tomt så används standardloggans höjd (152px).',
+	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Lämnas detta fält tomt så används standardloggans höjd (52px).',
 
 	'SITE_LOGO_IMAGE'				=> 'Sökväg till den egna sidloggan.',
 	'SITE_LOGO_IMAGE_EXPLAIN'		=> 'Lämna detta fält tomt för att använda standardloggan.<br />Om du vill använda en logga från en annan domän anger du hela URLen, annars anger du den lokala sökvägen.',

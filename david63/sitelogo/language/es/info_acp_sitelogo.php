@@ -33,43 +33,33 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'LOGO_CENTRE'					=> 'Centro',
-	'LOGO_LEFT'						=> 'Izquierda',
-	'LOGO_RIGHT'					=> 'Derecha',
+	'SITE_LOGO'					=> 'Logo del sitio personalizado',
 
-	'SITE_LOGO'						=> 'Logo del sitio personalizado',
+	'SITE_LOGO_EXPLAIN'			=> 'Aquí puede establecer las opciones para el logo del sitio personalizado y reemplazar el logo por defecto.',
 
-	'SITE_LOGO_EXPLAIN'				=> 'Aquí puede establecer las opciones para el logo del sitio personalizado y reemplazar el logo por defecto.',
+	'SITE_LOGO_HEIGHT'			=> 'Altura del logo',
+	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Dejando esto en blanco usará altura original del logotipo.<br />La altura por defecto del logo es 52px.',
 
-	'SITE_LOGO_HEIGHT'				=> 'Altura del logo',
-	'SITE_LOGO_HEIGHT_EXPLAIN'		=> 'Dejando esto en blanco usará altura original del logotipo.<br />La altura por defecto del logo es 152px.',
+	'SITE_LOGO_IMAGE'			=> 'Ruta de acceso al logo del sitio personalizado.',
+	'SITE_LOGO_IMAGE_EXPLAIN'	=> 'Dejando esto en blanco usará el logo por defecto.<br />Si desea utilizar una imagen remota para el logo, introduzca la URL completa de la imagen, o de lo contrario sólo introduzca la ubicación de la imagen en el sitio.',
 
-	'SITE_LOGO_IMAGE'				=> 'Ruta de acceso al logo del sitio personalizado.',
-	'SITE_LOGO_IMAGE_EXPLAIN'		=> 'Dejando esto en blanco usará el logo por defecto.<br />Si desea utilizar una imagen remota para el logo, introduzca la URL completa de la imagen, o de lo contrario sólo introduzca la ubicación de la imagen en el sitio.',
+	'SITE_LOGO_LEFT'			=> 'Bordes de la izquierda',
+	'SITE_LOGO_LEFT_EXPLAIN'	=> 'Redondear los bordes del lado izquierdo para que coincida con el banner.',
+	'SITE_LOGO_LOG'				=> '<strong>Opciones del logo del sitio personalizado actualizadas</strong>',
 
-	'SITE_LOGO_LEFT'				=> 'Bordes de la izquierda',
-	'SITE_LOGO_LEFT_EXPLAIN'		=> 'Redondear los bordes del lado izquierdo para que coincida con el banner.',
-	'SITE_LOGO_LOG'					=> '<strong>Opciones del logo del sitio personalizado actualizadas</strong>',
+	'SITE_LOGO_MANAGE'			=> 'Gestionar logo del sitio',
 
-	'SITE_LOGO_MANAGE'				=> 'Gestionar logo del sitio',
+	'SITE_LOGO_OPTIONS'			=> 'Opciones del logo del sitio',
 
-	'SITE_LOGO_OPTIONS'				=> 'Opciones del logo del sitio',
+	'SITE_LOGO_PIXELS'			=> 'Píxeles',
+	'SITE_LOGO_PIXELS_EXPLAIN'	=> 'Establezca el número de píxeles para el redondeo.',
 
-	'SITE_LOGO_PIXELS'				=> 'Píxeles',
-	'SITE_LOGO_PIXELS_EXPLAIN'		=> 'Establezca el número de píxeles para el redondeo.',
-	'SITE_LOGO_POSITION'			=> 'Posición del logo del sitio',
+	'SITE_LOGO_RIGHT'			=> 'Bordes de la derecha',
+	'SITE_LOGO_RIGHT_EXPLAIN'	=> 'Redondear los bordes del lado derecho para que coincida con el banner.',
 
-	'SITE_LOGO_REMOVE'				=> 'Eliminar logo del sitio',
-	'SITE_LOGO_REMOVE_EXPLAIN'		=> 'Al configurar esta opción evitará mostrar el logo del sitio.',
-	'SITE_LOGO_RIGHT'				=> 'Bordes de la derecha',
-	'SITE_LOGO_RIGHT_EXPLAIN'		=> 'Redondear los bordes del lado derecho para que coincida con el banner.',
+	'SITE_LOGO_SUPRESS'			=> 'Suprimir la visualización de texto',
+	'SITE_LOGO_SUPRESS_EXPLAIN'	=> 'Al configurar esta opción evitará mostrar el <strong>Nombre del sitio</strong> y <strong>Descripción del sitio</strong>.',
 
-	'SITE_LOGO_WIDTH'				=> 'Anchura del logo',
-	'SITE_LOGO_WIDTH_EXPLAIN'		=> 'Dejando esto en blanco usará anchura original del logo.<br />La anchura por defecto del logo es 149px.',
-	
-	'SITE_NAME_SUPRESS'				=> 'Suprimir la visualización de texto',
-	'SITE_NAME_SUPRESS_EXPLAIN'		=> 'Al configurar esta opción evitará mostrar el <strong>Nombre del sitio</strong> y <strong>Descripción del sitio</strong>.',
-
-	'SITE_SEARCH_REMOVE'			=> 'Eliminar cuadro de búsqueda',
-	'SITE_SEARCH_REMOVE_EXPLAIN'	=> 'Al configurar esta opción eliminará el cuadro de búsqueda en el panel de cabecera.',
+	'SITE_LOGO_WIDTH'			=> 'Anchura del logo',
+	'SITE_LOGO_WIDTH_EXPLAIN'	=> 'Dejando esto en blanco usará anchura original del logo.<br />La anchura por defecto del logo es 149px.',
 ));

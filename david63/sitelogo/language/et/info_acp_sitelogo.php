@@ -38,7 +38,7 @@ $lang = array_merge($lang, array(
 	'SITE_LOGO_EXPLAIN'			=> 'Siin saad seadistada oma foorumile kohandatud logo, asendamaks vaikimisi phpBB logo.',
 
 	'SITE_LOGO_HEIGHT'			=> 'Logo kõrgus',
-	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Jättes välja tühjaks kasutatakse logo vaikimisi kõrgust.<br />Vaikimsi logo kõrgus on 152px.',
+	'SITE_LOGO_HEIGHT_EXPLAIN'	=> 'Jättes välja tühjaks kasutatakse logo vaikimisi kõrgust.<br />Vaikimsi logo kõrgus on 52px.',
 
 	'SITE_LOGO_IMAGE'			=> 'Kohandatud foorumi logo teekond.',
 	'SITE_LOGO_IMAGE_EXPLAIN'	=> 'Jättes välja tühjaks kasutatakse vaikimsi logo.<br />Juhul, kui soovid kasutada eemal asetsevat pilti (remote), siis sisesta siia pildi täielik URL aadress. Vastasel korral sisesta siia oma pildi asukoht serveris.',
